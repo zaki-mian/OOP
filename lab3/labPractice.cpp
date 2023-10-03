@@ -1,3 +1,6 @@
+// WARNING
+// It takes only one computer to infict everyone.
+
 #include <iostream>
 using namespace std;
 
