@@ -8,6 +8,9 @@ class Ship {
         int number;
         float longitude, latitude;
     public:
+    void ship(){
+        cout<<"Ship";
+    }
         Ship(string n, int num) : name(n), number(num) {}
         
         void getPosition() {
@@ -23,6 +26,7 @@ class Ship {
 };
 
 int main() {
+    Ship ship0;
     Ship ship1("Titanic", 1);
     Ship ship2("Queen Mary", 2);
     Ship ship3("Oasis of the Seas", 3);
