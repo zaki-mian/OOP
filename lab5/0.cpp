@@ -31,5 +31,5 @@ void main(){
     Distance dist1,dist3;
     Distance dist2(10,3.35);
     dist1.getdist();
-    dist3.add_dist(dist1,dist2);
+    // dist3.add_dist(dist1,dist2);
 }
