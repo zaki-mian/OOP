@@ -1,41 +1,15 @@
 #include <iostream>
 using namespace std;
 
-// class Employee {
-//     int empNumber;
-//     float empCompensation;
-// public:
-//     void getData() {
-//         cout << "Enter employee number: ";
-//         cin >> empNumber;
-//         cout << "Enter employee compensation: ";
-//         cin >> empCompensation;
-//     }
-//     void displayData() {
-//         cout << "Employee number: " << empNumber << endl;
-//         cout << "Employee compensation: " << empCompensation << endl;
-//     }
-// };
-
-// int main() {
-//     Employee emp[3];
-//     for(int i=0; i<3; i++) {
-//         cout << "Enter details of employee " << i+1 << endl;
-//         emp[i].getData();
-//     }
-//     cout << endl;
-//     for(int i=0; i<3; i++) {
-//         cout << "Details of employee " << i+1 << endl;
-//         emp[i].displayData();
-//         cout << endl;
-//     }
-//     return 0;
-// }
-
 class employee{
     int id;
     float salary;
     public:
+    // Default constructor
+    employee(){
+        id = 1;
+        salary = 1000.0;
+    }
     void getData(){
         cout<<"Enter employee id: ";
         cin>>id;
@@ -48,12 +22,13 @@ class employee{
 
     }
 };
+
 int main(){
     employee e[3];
     for(int i=0;i<3;i++){
-        cout<<"Enter details of employe: "<<i+1<<endl;
+        cout<<"Enter details of employee: "<<i+1<<endl;
         e[i].getData();
         e[i].display();
-        
     }
+    return 0;
 }
